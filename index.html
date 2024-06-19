@@ -7,25 +7,25 @@
 
     <script language="javascript" type="text/javascript">
 
-        function writeCookie() {
-            // if input is blank, function will not execute.
-            if (document.myform.customer.value=="")
-            {
-                alert("Please enter a value");
-                return;
+        function myFunction() {
+            var a=100;
+            try {
+                var s = a.toUpperCase();
+                alert("value of variable is:" + a);
             }
-            // user entered value will store in cookievalue 
-            var cookievalue= escape(document.myform.customer.value) + ";";
-            document.cookie = "name" +cookievalue;
-            document.write("setting cookie : " + "name = " + cookievalue);
+            catch(e) {
+                alert("Error");
+            }
+            finally {
+                alert("Finally block will always execute");
+            }
         }
     </script>
 
 </head>
 <body>
-    <form name="myform" action="">
-        Enter name: <input type="text" name="customer">
-        <input type="button" value="set cookie" onclick="writeCookie();">
+    <p>click the following to see result</p>
+    <form>
+        <input type="button" value="Click me" onclick="myFunc();" />
     </form>
-</body>
 </html>

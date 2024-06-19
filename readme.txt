@@ -64,3 +64,33 @@ by going to memory in that location. below is code.
         }
     </script>
 
+
+lec 20. error handling. 
+runtime errors can be handled. also called exceptions. 
+syntax or logical errors can not be handled in runtime.
+we can use try catch finally and throw keywords used for exception handling.
+
+try block will execute if there is no error or exception. catch is execute if any error occurs. 
+finally will execute always. 
+
+ <p>click the following to see result</p>
+    <form>
+        <input type="button" value="Click me" onclick="myFunc();" />
+    </form>
+
+        <script language="javascript" type="text/javascript">
+
+        function myFunction() {
+            var a=100;
+            try {
+                var s = a.toUpperCase();
+                alert("value of variable is:" + a);
+            }
+            catch(e) {
+                alert("Error");
+            }
+            finally {
+                alert("Finally block will always execute");
+            }
+        }
+    </script>
