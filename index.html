@@ -7,25 +7,14 @@
 
     <script language="javascript" type="text/javascript">
 
-        function myFunction() {
-            var a=100;
-            try {
-                var s = a.toUpperCase();
-                alert("value of variable is:" + a);
-            }
-            catch(e) {
-                alert("Error");
-            }
-            finally {
-                alert("Finally block will always execute");
-            }
+        function Redirect() {
+        window.location = "https://www.udemy.com";
         }
     </script>
 
 </head>
-<body>
-    <p>click the following to see result</p>
-    <form>
-        <input type="button" value="Click me" onclick="myFunc();" />
-    </form>
+<body onload="setTimeout('Redirect()', 5000)">
+    <p>You will be redirected in 5 seconds</p>
+    
+</body>
 </html>
